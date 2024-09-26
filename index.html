@@ -6,7 +6,7 @@
     <title>TheFacebook</title>
     <style>
         body {
-            font-family: Verdana, Tahoma, sans-serif;
+            font-family: sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -16,10 +16,12 @@
             border-collapse: collapse;
             margin: auto;
         }
+        a {
+            text-decoration: none; 
+        }
         td table {
             width: 100%;
             border-collapse:collapse;
-            padding: 10px 10px 10px 10px;
         }
         tr {
             border: 1px solid #ddd;
@@ -36,6 +38,7 @@
             color: white;
             margin: 0;
             padding: 10px;
+            tab-size: 10px;
         }
         .navbar {
             background-color: #dfe3ee;
@@ -49,14 +52,14 @@
             font-weight: bold;
         }
         .sidebar {
-            background-color: #f4f4f4;
+            background-color: #ffffff;
         }
         .sidebar p {
             color: #333;
         }
         .sidebar ul {
-            list-style-type: none;
-            padding: 0;
+            list-style-type:none;
+            padding-left:  0;
         }
         .sidebar ul li {
             margin-bottom: 10px;
@@ -71,16 +74,11 @@
         }
         .profile-info {
             border: 1px solid #ccc;
-            padding: 10px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-            background-color: #f9f9f9;
+            padding: 5px;
+            background-color: #ffffff;
         }
-        .profile-info h4 {
-            font-size: 18px;
-            margin: 0 0 10px;
-        }
-        .profile-info p {
-            margin: 5px 0;
+        .profile-info table tr {
+            border: 0px solid #ddd;
         }
         .footer {
             background-color: #dfe3ee;
@@ -91,6 +89,9 @@
         img {
             max-width: 100%;
             height: auto;
+        }
+        span {
+            margin-left:200px;
         }
     </style>
 </head>
@@ -103,7 +104,7 @@
         </tr>
         <tr>
             <td colspan="2" class="navbar">
-                <a href="lab3.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="search.html">Search</a>
                 <a href="global.html">Global</a>
                 <a href="social.html">Social Net</a>
@@ -113,8 +114,9 @@
             </td>
         </tr>
         <tr>
-            <td class="sidebar" width="20%">
+            <td class="sidebar" width="20%" style="vertical-align:top;">
                 <input type="text" placeholder="Search" class="Search" required></input>
+                <button type="submit">Go</button>
                 <p>Quick search</p>
                 <ul>
                     <li><a href="profile.html">My Profile</a></li>
@@ -128,19 +130,23 @@
                 </ul>
             </td>
             <td class="content" width="80%">
-                <h4>Scott Pearson's Profile</h4>
+                <h4>Scott Pearson's Profile (This is you)</h4>
                 <table>
                     <tr>
-                        <td width="40%">
-                            <table>
+                        <td width="30%">
+                            <table style="width: 90%;">
+                                <tr>
+                                    <td>
+                                        <h4>Picture [ edit ]</h4>
+                                    </td>
+                                </tr>
                                 <tr>
                                     <td class="profile-picture">
-                                        <h4>Picture</h4>
                                         <img src="image.png" alt="Profile Picture" width="150" height="150">
                                     </td>
                                 </tr>
-                            </table>
-                            <table>
+                            </table> <br> 
+                            <table style="width: 90%;">
                                 <tr>
                                     <td><a href="#">View My Friends</a></td>
                                 </tr>
@@ -153,53 +159,173 @@
                                 <tr>
                                     <td><a href="#">My Privacy Preferences</a></td>
                                 </tr>
-                            </table>
-                            <table>
+                            </table> <br>
+                            <table style="width: 90%;">
                                 <tr>
                                     <td>
                                             <h4>Connection</h4>
                                             <p>This is you.</p>
                                     </td>
                                 </tr>
-                            </table>
-                            <table>
+                            </table> <br>
+                            <table style="width: 90%;">
                                 <tr>
                                     <td>
                                             <h4>Access</h4>
                                             <p>Scott is currently logged in from a non-residential location.</p>
                                     </td>
                                 </tr>
-                            </table>
-                            <table>
+                            </table> <br>
+                            <table style="width: 90%;">
                                 <tr>
                                     <td>
-                                            <h4>Other Schools</h4>
+                                            <h4>Other Schools [ edit ]</h4>
                                             <p>national universty colloge location.</p>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                         <td class="profile-info" width="60%">
-                            <h4>Information</h4>
-                            <p><strong>Account Info:</strong></p>
-                            <p>Name: </p>
-                            <p>Member Since:</p>
-                            <p>Last Update:</p>
-                            <p><strong>Basic Info:</strong></p>
-                            <p>Email:</p>
-                            <p>Status:</p>
-                            <p>Sex:</p>
-                            <p>Year:</p> 
-                            <p>Concentration:</p>
-                            <p>Phone:</p>
-                            <p>High school:</p>
-                            <p><strong>Extended Info:</strong></p>
-                            <p>Screenname:</p>
-                            <p>Looking for:</p>
-                            <p>Interested In:</p>
-                            <p>Relationship Status:</p>
-                            <p>Political views:</p>                                
-                            <p>Interests:</p>
+                            <table style="width: 90%;">
+                                <tr>
+                                    <h4>Information   [ edit ]</h4>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><strong>Account Info:</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Name:</p>
+                                    </td>
+                                    <td>
+                                        <p>Scott Pearson, BS</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Member Since:</p>
+                                    </td>
+                                    <td>
+                                        <p>January 12, 2005</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Last Update:</p>
+                                    </td>
+                                    <td>
+                                        <p>jkddj jfh frhfuri</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><strong>Basic Info:      [ edit ]</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Email:</p>
+                                    </td>
+                                    <td>
+                                        <p>pearsons2@scronbon.edu</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Status:</p>  
+                                    </td>
+                                    <td>
+                                        <p>Alummus jdj</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Sex:</p>
+                                    </td>
+                                    <td>
+                                        <p>Male</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Concentration:</p>
+                                    </td>
+                                    <td>
+                                        <p>Comphdjkfhrubrhbrhbvjh hfrbrj rfb</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Phone:</p>
+                                    </td>
+                                    <td>
+                                        <p>570,448,4818</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>High school:</p>
+                                    </td>
+                                    <td>
+                                        <p>Dunfjrhfnf</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><strong>Extended Info:   [ edit ]</strong></p> 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Screenname:</p>
+                                    </td>
+                                    <td>
+                                        <p>kejfekhfruif</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Looking for:</p>  
+                                    </td>
+                                    <td>
+                                        <p>jdhfef hbd hdbhj</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Interested In:</p>
+                                    </td>
+                                    <td>
+                                        <p>kfejfkd jfndm uiy38yh2</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Relationship Status:</p>
+                                    </td>
+                                    <td>
+                                        <p>single</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Political views:</p>  
+                                    </td>
+                                    <td>
+                                        <p>djkh jhej jd jhdbc he</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Interests:</p>
+                                    </td>
+                                    <td>
+                                        <p>djee jen eqwin</p>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                 </table>
