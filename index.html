@@ -30,7 +30,7 @@
             font-weight: bold;
         }
         nav a:hover {
-            text-decoration: underline;
+            text-decoration:none;
         }
         .sidebar {
             width: 15%;
@@ -39,11 +39,15 @@
             float: left;
             margin-right: 20px;
         }
+        .sidebar a {
+            text-decoration: none;
+            
+        }
         .content {
-            width: 60%;
+            width: 80%;
             float: left;
             background-color: #ffffff;
-            padding: 15px;
+            padding: 10px;
         }
         .profile-info {
             border: 1px solid #ddd;
@@ -52,7 +56,7 @@
         }
         img {
             max-width: 100%;
-            height: auto;
+            height:auto;
         }
         footer {
             clear: both;
@@ -89,11 +93,17 @@
         tr {
             border: 1px solid #ddd;
         }
+        article table{
+            border: 1px solid #ddd;
+        }
         article table tr {
             border: 0px solid #ddd;
         }
         article p {
             margin: auto;
+        }
+        section section p {
+            text-align: center;
         }
 
     </style>
@@ -113,7 +123,7 @@
         <a href="logout.html">Logout</a>
     </nav>
 
-    <aside class="sidebar" style="width: 15%;">
+    <aside class="sidebar" style="width: 15%; border: 1px solid #ddd;">
         <input type="text" placeholder="Search" class="Search" required>
         <button type="submit">Go</button>
         <p>Quick Links</p>
@@ -129,141 +139,144 @@
         </ul>
     </aside>
 
-    <h4>Scott Pearson's Profile</h4>
-    <section class="content" style="width: 25%;">
-        <table class="profile-info">
-            <tr>
-                    <h4>Profile Picture [ edit ]</h4>
-            </tr>
-            <tr>
-                <td>
-                    <img src="image.png" alt="Profile Picture" width="150" height="150">
-                </td> 
-            </tr>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <h4>Actions</h4>
-            </tr>
-            <tr>
-                <td><a href="#">View My Friends</a></td>
-            </tr>
-            <tr>
-                <td><a href="#">Edit My Profile</a></td>
-            </tr>
-            <tr>
-                <td><a href="#">My Account Preferences</a></td>
-            </tr>
-            <tr>
-                <td><a href="#">My Privacy Preferences</a></td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                    <h4>Connection</h4>
-            </tr>
-            <tr>
-                <td>
-                    <p>This is you.</p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                    <h4>Access</h4>
-            </tr>
-            <tr>
-                <td>
-                    <p>Scott is currently logged in from a non-residential location.</p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <h4>Other Schools [ edit ]</h4>
-            </tr>
-            <tr>
-                <td><p>National University College Location.</p></td>
-            </tr>
-        </table>
+    <section class="content" style="width: 79%; border: 1px solid #ddd;">
+        <h4>Scott Pearson's Profile</h4>
+        <section class="content" style="width: 30%;">
+            <table class="profile-info">
+                <tr>
+                        <h4>Profile Picture [ edit ]</h4>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="image.png" alt="Profile Picture" width="400" height="200">
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><a href="#">View My Friends</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Edit My Profile</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">My Account Preferences</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">My Privacy Preferences</a></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                        <h4>Connection</h4>
+                </tr>
+                <tr>
+                    <td>
+                        <p>This is you.</p>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                        <h4>Access</h4>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Scott is currently logged in from a non-residential location.</p>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <h4>Other Schools [ edit ]</h4>
+                </tr>
+                <tr>
+                    <td><p>National University College Location.</p></td>
+                </tr>
+            </table>
+        </section>
+    
+        <article class="content" style="width: 66%;">
+            <table>
+                <tr>
+                    <h4>Information [ edit ]</h4>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>Account Info:</strong></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td>Scott Pearson, BS</td>
+                </tr>
+                <tr>
+                    <td>Member Since:</td>
+                    <td>January 12, 2005</td>
+                </tr>
+                <tr>
+                    <td>Last Update:</td>
+                    <td>jkddj jfh frhfuri</td>
+                </tr>
+                <tr>
+                    <td><p><strong>Basic Info: [ edit ]</strong></p></td> 
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>pearsons2@scronbon.edu</td>
+                </tr>
+                <tr>
+                    <td>Status:</td>
+                    <td>Alumnus jdj</td>
+                </tr>
+                <tr>
+                    <td>Sex:</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Concentration:</td>
+                    <td>Comphdjkfhrubrhbrhbvjh hfrbrj rfblkejej jrrj irhfkjre kjfehjk ieuhdj uehnfejh</td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td>570-448-4818</td>
+                </tr>
+                <tr>
+                    <td>High School:</td>
+                    <td>Dunfjrhfnf e,kj jee</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>Extended Info: [ edit ]</strong></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Screenname:</td>
+                    <td>kejfekhfruif lkej jkhekhe ihiweh iwuiowhn 89383 f ihuehfu khf hekahfioehf k fehfkjehf iehfejhf jkndkj </td>
+                </tr>
+                <tr>
+                    <td>Looking for:</td>
+                    <td>jdhfef hbd hdbhj kwjdflkejf  skhfjkfhkjd oiehejk lkejhekjfeh kfhjkhfje oekjfkenfie</td>
+                </tr>
+                <tr>
+                    <td>Interested In:</td>
+                    <td>kfejfkd jfndm uiy38yh2 khfefkfkjdhfje ejhfeui oiwh fhkfjhfkjdfh ehfkjehfiuen iehfkej</td>
+                </tr>
+                <tr>
+                    <td>Relationship Status:</td>
+                    <td>Single</td>
+                </tr>
+                <tr>
+                    <td>Political Views:</td>
+                    <td>djkh jhej jd jhdbc he kjewhfuhfuhfiufh iuefhuiehrieh iuhd </td>
+                </tr>
+                <tr>
+                    <td>Interests:</td>
+                    <td>djee jen eqwin fjefkhfjhjkhfuihfuihf iehfieuwhfwihf wih ifhihf ewhiuehfieh iehfiewuh ifehiehff </td>
+                </tr>
+            </table>
+        </article>
     </section>
-
-    <article class="content" style="width: 45%;">
-        <h4>Information [ edit ]</h4>
-        <p><strong>Account Info:</strong></p>
-        <table>
-            <tr>
-                <td>Name:</td>
-                <td>Scott Pearson, BS</td>
-            </tr>
-            <tr>
-                <td>Member Since:</td>
-                <td>January 12, 2005</td>
-            </tr>
-            <tr>
-                <td>Last Update:</td>
-                <td>jkddj jfh frhfuri</td>
-            </tr>
-            <tr>
-                <td><p><strong>Basic Info: [ edit ]</strong></p></td> 
-            </tr>
-            <tr>
-                <td>Email:</td>
-                <td>pearsons2@scronbon.edu</td>
-            </tr>
-            <tr>
-                <td>Status:</td>
-                <td>Alumnus jdj</td>
-            </tr>
-            <tr>
-                <td>Sex:</td>
-                <td>Male</td>
-            </tr>
-            <tr>
-                <td>Concentration:</td>
-                <td>Comphdjkfhrubrhbrhbvjh hfrbrj rfb</td>
-            </tr>
-            <tr>
-                <td>Phone:</td>
-                <td>570-448-4818</td>
-            </tr>
-            <tr>
-                <td>High School:</td>
-                <td>Dunfjrhfnf</td>
-            </tr>
-            <tr>
-                <td>
-                    <p><strong>Extended Info: [ edit ]</strong></p>
-                </td>
-            </tr>
-            <tr>
-                <td>Screenname:</td>
-                <td>kejfekhfruif</td>
-            </tr>
-            <tr>
-                <td>Looking for:</td>
-                <td>jdhfef hbd hdbhj</td>
-            </tr>
-            <tr>
-                <td>Interested In:</td>
-                <td>kfejfkd jfndm uiy38yh2</td>
-            </tr>
-            <tr>
-                <td>Relationship Status:</td>
-                <td>Single</td>
-            </tr>
-            <tr>
-                <td>Political Views:</td>
-                <td>djkh jhej jd jhdbc he</td>
-            </tr>
-            <tr>
-                <td>Interests:</td>
-                <td>djee jen eqwin</td>
-            </tr>
-        </table>
-    </article>
-
     <footer>
         <p>Welcome to TheFacebook</p>
     </footer>
