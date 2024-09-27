@@ -35,19 +35,53 @@
         .sidebar {
             width: 15%;
             background-color: #ffffff;
-            padding: 15px;
+            padding: 10px;
             float: left;
             margin-right: 20px;
         }
-        .sidebar a {
+        .search-box {
+            width: 85%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .search-btn {
+            width: 80%;
+            padding: 5px;
+            background-color: #254be3;
+            border: 1px solid #999;
+            cursor: pointer;
+            color: #ffffff;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 5px;
+        }
+        .sidebar ul li a {
             text-decoration: none;
-            
+            color: #0066cc;
+            font-size: 15px;
+        }
+        .sidebar p {
+            margin-bottom: 10px;
+        }
+        aside table tr {
+            border: 1px dashed #ddd;
+        }
+        aside table tr td table tr {
+            border: 0px solid #ddd;
         }
         .content {
             width: 80%;
             float: left;
             background-color: #ffffff;
             padding: 10px;
+        }
+        .content a {
+           text-decoration: none; 
+           color: #0066cc;
         }
         .profile-info {
             border: 1px solid #ddd;
@@ -103,9 +137,29 @@
             margin: auto;
         }
         section section p {
-            text-align: center;
+            text-align:right;
+        }
+        article a {
+            text-align: end;
+        }
+        .edit-link {
+            float: right;
+            color: #0066cc;
+            font-size: 15px;
         }
 
+        h4, p {
+            margin: 0;
+        }
+        h4 .edit-link {
+            color: #ffffff;
+        }
+        h3 {
+            background-color: #0b1262;
+            color: white;
+            padding: 15px;
+            margin:auto;
+        }
     </style>
 </head>
 <body>
@@ -123,28 +177,48 @@
         <a href="logout.html">Logout</a>
     </nav>
 
-    <aside class="sidebar" style="width: 15%; border: 1px solid #ddd;">
-        <input type="text" placeholder="Search" class="Search" required>
-        <button type="submit">Go</button>
-        <p>Quick Links</p>
-        <ul>
-            <li><a href="profile.html">My Profile</a></li>
-            <li><a href="groups.html">My Groups</a></li>
-            <li><a href="messages.html">My Messages</a></li>
-            <li><a href="friend.html">My Friend</a></li>
-            <li><a href="awat.html">My Away Message</a></li>
-            <li><a href="mobile.html">My Mobile Info</a></li>
-            <li><a href="account.html">My Account</a></li>
-            <li><a href="privacy.html">My Privacy</a></li>
-        </ul>
+    <aside class="sidebar" style="width: 16%;">
+        <table style="width: 100%; border: 1px dashed #000000;">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <input type="text" placeholder="Search" class="search-box" required>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Quick Search</p>
+                            </td>
+                            <td>
+                                <button type="submit" class="search-btn">Go</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="profile.html">My Profile</a></li>
+                        <li><a href="groups.html">My Groups</a></li>
+                        <li><a href="messages.html">My Messages</a></li>
+                        <li><a href="friend.html">My Friend</a></li>
+                        <li><a href="awat.html">My Away Message</a></li>
+                        <li><a href="mobile.html">My Mobile Info</a></li>
+                        <li><a href="account.html">My Account</a></li>
+                        <li><a href="privacy.html">My Privacy</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
     </aside>
 
     <section class="content" style="width: 79%; border: 1px solid #ddd;">
-        <h4>Scott Pearson's Profile</h4>
+        <h3>Scott Pearson's Profile (This is you)</h3>
         <section class="content" style="width: 30%;">
             <table class="profile-info">
                 <tr>
-                        <h4>Profile Picture [ edit ]</h4>
+                    <h4>Profile Picture <a href="#" class="edit-link">[edit]</a></h4>
                 </tr>
                 <tr>
                     <td>
@@ -188,7 +262,7 @@
             </table>
             <table>
                 <tr>
-                    <h4>Other Schools [ edit ]</h4>
+                    <h4>Other Schools<a href="#" class="edit-link">[edit]</a></h4>
                 </tr>
                 <tr>
                     <td><p>National University College Location.</p></td>
@@ -199,7 +273,7 @@
         <article class="content" style="width: 66%;">
             <table>
                 <tr>
-                    <h4>Information [ edit ]</h4>
+                   <h4>Information<a href="#" class="edit-link">[edit]</a></h4>
                 </tr>
                 <tr>
                     <td>
@@ -219,7 +293,7 @@
                     <td>jkddj jfh frhfuri</td>
                 </tr>
                 <tr>
-                    <td><p><strong>Basic Info: [ edit ]</strong></p></td> 
+                    <td colspan="2"><p><strong>Basic Info:<a href="#" class="edit-link">[edit]</a></strong></p></td> 
                 </tr>
                 <tr>
                     <td>Email:</td>
@@ -246,17 +320,17 @@
                     <td>Dunfjrhfnf e,kj jee</td>
                 </tr>
                 <tr>
-                    <td>
-                        <p><strong>Extended Info: [ edit ]</strong></p>
+                    <td colspan="2">
+                        <p><strong>Extended Info:<a href="#" class="edit-link">[edit]</a></strong></p>
                     </td>
                 </tr>
                 <tr>
                     <td>Screenname:</td>
-                    <td>kejfekhfruif lkej jkhekhe ihiweh iwuiowhn 89383 f ihuehfu khf hekahfioehf k fehfkjehf iehfejhf jkndkj </td>
+                    <td>kejfekhfruif lkej jkhekhe ihiweh iwuiowhn 89383 f ihuehfu khf hekahfioehf </td>
                 </tr>
                 <tr>
                     <td>Looking for:</td>
-                    <td>jdhfef hbd hdbhj kwjdflkejf  skhfjkfhkjd oiehejk lkejhekjfeh kfhjkhfje oekjfkenfie</td>
+                    <td>jdhfef hbd hdbhj kwjdflkejf  skhfjkfhkjd oiehejk lkejhekjfeh kfhjkhfje</td>
                 </tr>
                 <tr>
                     <td>Interested In:</td>
